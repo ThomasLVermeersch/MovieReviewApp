@@ -99,6 +99,9 @@ $(document).on('turbolinks:load',function() {
       standardSearch();
     }
   });
+
+  //API Calls
+  /*I promise I would never leave API keys here, this is a one time exception*/
   
   function standardSearch(){
 		var query = $('.uk-search-input').val();

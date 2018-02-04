@@ -1,1 +1,1 @@
-Movie Review App in RoR
+Web App made in Ruby on Rails to view movie reviews and review them.

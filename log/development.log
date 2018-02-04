@@ -41646,3 +41646,157 @@ Processing by ReviewsController#show as JSON
 Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-02-04 01:40:57 -0800
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 1039ms (Views: 1021.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reviews/latest" for 127.0.0.1 at 2018-02-04 01:40:59 -0800
+Processing by ReviewsController#latest as JSON
+  [1m[36mReview Load (2.3ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" ORDER BY "reviews"."id" DESC LIMIT ?[0m  [["LIMIT", 10]]
+Completed 200 OK in 28ms (Views: 0.3ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/reviews/198663" for 127.0.0.1 at 2018-02-04 01:40:59 -0800
+Processing by ReviewsController#show as JSON
+  Parameters: {"id"=>"198663"}
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 198663]]
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/reviews/354912" for 127.0.0.1 at 2018-02-04 01:40:59 -0800
+Processing by ReviewsController#show as JSON
+  Parameters: {"id"=>"354912"}
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 354912]]
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/reviews/8844" for 127.0.0.1 at 2018-02-04 01:40:59 -0800
+Processing by ReviewsController#show as JSON
+  Parameters: {"id"=>"8844"}
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 8844]]
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/reviews/346364" for 127.0.0.1 at 2018-02-04 01:40:59 -0800
+Processing by ReviewsController#show as JSON
+  Parameters: {"id"=>"346364"}
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 346364]]
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/reviews/245891" for 127.0.0.1 at 2018-02-04 01:40:59 -0800
+Processing by ReviewsController#show as JSON
+  Parameters: {"id"=>"245891"}
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 245891]]
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/reviews/460793" for 127.0.0.1 at 2018-02-04 01:40:59 -0800
+Processing by ReviewsController#show as JSON
+  Parameters: {"id"=>"460793"}
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 460793]]
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/reviews/335984" for 127.0.0.1 at 2018-02-04 01:40:59 -0800
+Processing by ReviewsController#show as JSON
+  Parameters: {"id"=>"335984"}
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 335984]]
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/reviews/343668" for 127.0.0.1 at 2018-02-04 01:40:59 -0800
+Processing by ReviewsController#show as JSON
+  Parameters: {"id"=>"343668"}
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 343668]]
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/reviews/284053" for 127.0.0.1 at 2018-02-04 01:40:59 -0800
+Processing by ReviewsController#show as JSON
+  Parameters: {"id"=>"284053"}
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 284053]]
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/reviews/211672" for 127.0.0.1 at 2018-02-04 01:40:59 -0800
+Started GET "/reviews/281338" for 127.0.0.1 at 2018-02-04 01:40:59 -0800
+Started GET "/reviews/339403" for 127.0.0.1 at 2018-02-04 01:40:59 -0800
+Processing by ReviewsController#show as JSON
+  Parameters: {"id"=>"211672"}
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 211672]]
+Processing by ReviewsController#show as JSON
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Processing by ReviewsController#show as JSON
+  Parameters: {"id"=>"339403"}
+  Parameters: {"id"=>"281338"}
+Started GET "/reviews/339964" for 127.0.0.1 at 2018-02-04 01:40:59 -0800
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 339403]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 281338]]
+Started GET "/reviews/396422" for 127.0.0.1 at 2018-02-04 01:40:59 -0800
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Processing by ReviewsController#show as JSON
+  Parameters: {"id"=>"339964"}
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 339964]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Processing by ReviewsController#show as JSON
+  Parameters: {"id"=>"396422"}
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 396422]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/reviews/209112" for 127.0.0.1 at 2018-02-04 01:40:59 -0800
+Processing by ReviewsController#show as JSON
+  Parameters: {"id"=>"209112"}
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 209112]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/reviews/166426" for 127.0.0.1 at 2018-02-04 01:40:59 -0800
+Processing by ReviewsController#show as JSON
+  Parameters: {"id"=>"166426"}
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 166426]]
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/reviews/131631" for 127.0.0.1 at 2018-02-04 01:40:59 -0800
+Processing by ReviewsController#show as JSON
+  Parameters: {"id"=>"131631"}
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 131631]]
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/reviews/181808" for 127.0.0.1 at 2018-02-04 01:40:59 -0800
+Processing by ReviewsController#show as JSON
+  Parameters: {"id"=>"181808"}
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 181808]]
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/reviews/321612" for 127.0.0.1 at 2018-02-04 01:40:59 -0800
+Processing by ReviewsController#show as JSON
+  Parameters: {"id"=>"321612"}
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 321612]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/reviews/347882" for 127.0.0.1 at 2018-02-04 01:40:59 -0800
+Processing by ReviewsController#show as JSON
+  Parameters: {"id"=>"347882"}
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 347882]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
