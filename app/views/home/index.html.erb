@@ -1,0 +1,76 @@
+<!-- NavBar -->
+
+<!-- Review Modal and All reviews of certain movie modal-->
+<div class="overlay"></div>
+<div class="review-modal">
+    <button id="close-modal"><span uk-icon="close"></span></button>
+
+    <h2 id="review-modal-title"></h2>
+    <form id="review-form" class="uk-form">
+        <label for='email'>Email</label>
+            <input type="email" id="review-email" placeholder="Email" required>
+        <label for='rating'>Rating(1-5)</label>
+            <input type="radio" id="review-rating" name="rating" value="1">
+            <input type="radio" id="review-rating" name="rating" value="2">
+            <input type="radio" id="review-rating" name="rating" value="3" checked="checked">
+            <input type="radio" id="review-rating" name="rating" value="4">
+            <input type="radio" id="review-rating" name="rating" value="5">
+            <br>
+        <label for='comment'>Comment</label>
+            <textarea id="comment-box" rows="6" cols="25" name='comment' placeholder='comment'> </textarea>
+            <br>
+        <input type="submit" class="uk-button uk-button-primary" id="submit-button">
+        
+    <br>
+    </form>
+    </form>
+</div>
+
+<div class="all-reviews-modal">
+    <h2 class="all-reviews-title"></h2>
+    <button id="close-all-reviews"><span uk-icon="close"></span></button>
+    <div id="all-reviews-scroll">
+
+    </div>
+</div>
+
+<!-- Navbar-->
+<nav class="uk-navbar-container uk-margin" uk-navbar>
+    <div class="uk-navbar-left">
+
+        <a class="uk-navbar-item uk-logo" href="#">Movie Reviews</a>
+
+        <div class="uk-navbar-item" id="about-link">
+            <div><a href="/reviews">All Reviews</a></div>
+        </div>
+    </div>
+</nav>
+
+<!-- Search Bar-->
+<div class="uk-margin">
+    <form class="uk-search uk-search-default">
+        <a href="javascript:void(0)" class="uk-search-icon-flip" uk-search-icon></a>
+        <input class="uk-search-input" type="search" placeholder="Search for movies here...">
+    </form>
+</div>
+
+<!-- Results Display -->
+<div class="search_type">
+<div>
+    <p>  sort by:</p>
+    <div class="uk-button-group">
+        <button class="uk-button uk-button-danger" id="title-sort">Title</button>
+        <button class="uk-button uk-button-danger" id="genre-sort">Genre</button>
+        <button class="uk-button uk-button-danger" id="release-sort">Release Date</button>
+    </div>
+</div>
+<br>
+</div>
+<div class="display-wrapper">
+    <div class="recent-reviews">
+        <h3 id="recent-review-title">Recent Reviews</h3>
+        <div id="recent-review-display"></div>
+    </div>
+    <div class="movie-display"></div>
+
+</div>
